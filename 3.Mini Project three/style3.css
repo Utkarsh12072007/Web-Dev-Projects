@@ -1,0 +1,137 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color:white;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 40%;
+}
+#leftTop{
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 15%;
+}
+#leftTop h1{
+    padding: 10%;
+    font-size: 85px;
+    line-height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding-top: 5%;
+}
+#design{
+    display: flex;
+    margin:50px;
+    width: 85px;
+    height: 25px;
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 55px;
+}
+#design p{
+    font-size: small;
+    padding: 3px;
+    padding-left:5px;
+    padding-top:4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#color1{
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    margin-left: 4px;
+    background-color:blue;
+    border-radius: 50%;
+}
+#color2{
+    width: 12px;
+    height: 12px;
+    margin-top:5px;
+    margin-right:3px;
+    background-color:red;
+    border-radius: 50%;
+}
+#Details h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin-left: 50px;
+}
+#Details p{
+    padding-top:10px;
+    font-size: 10px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#right{
+    position: relative;
+    margin-top: 30%;
+    margin-left:10%;
+    margin-right: 25%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+#heading{   
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#heading h3{
+    font-size:18px;
+    font-weight: 600;
+}
+#icon{
+    padding-top: 5px;
+    display: flex;
+}
+#icon h4{
+    font-size: small;
+}
+#icon i{
+    color:black;
+    font-size: small;
+}
+#image{
+    width: 100%;
+    height: 91%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1611417361507-7d77bbc20a73?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#rotated{
+    position: absolute;
+    left: -12%;
+    bottom: 5%;
+    transform-origin: 0 0;
+    rotate: -90deg;
+
+}
+#bag{
+    position:absolute;
+    border-radius: 50%;
+    left: 87%;
+    bottom: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    padding-top:40px;
+    padding-left: 13px;
+}
+#bag h5{
+    color: white;
+    font-weight: 500;
+}

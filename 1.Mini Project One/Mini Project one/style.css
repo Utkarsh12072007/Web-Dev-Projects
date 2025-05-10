@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25% 60% 15%;
+}
+.elem{
+    background-color:white;
+}
+#right{
+    position: relative;
+    background-color:white;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 9vmin;
+    padding-right:11vmin;
+}
+#right video{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30% 40%;
+}
+#left_middle{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:white;
+    margin-top: 6vh;
+}
+#left_middle h1{
+    font-size:4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 2vw;
+
+}
+#left_middle :nth-child(2n){
+    margin-left: 10vw;
+}
+#left_middle :nth-child(4){
+    margin-left: 15vw;
+}
+#left_end{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background-color:white; */
+    margin-left:2vw;
+    margin-top:20px;
+    font-size:small;
+}
+#left_top_left{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:white;
+}
+#left_top_right{
+    grid-column-start:2;
+    grid-column-end: 3;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#left_top_right h3{
+    font-weight:500;
+    justify-self: end;
+    font-size: 1.5vw;
+    margin: 20px 0.5vw;
+    margin-bottom: 30px;
+}
+#left_top_right h5{
+    font-weight: 500;
+    justify-self: end;
+    font-size:1vw;
+    line-height: 1.2vw;
+    margin-right: 0.5vw;
+}
+#sign{
+    height: 1vw;
+    width: 1vw;
+    background-color:black;
+    margin: 2vw;
+    rotate: 45deg;
+}
+#arrow{
+    position : absolute;
+    width: 10vmin;
+    height: 10vmin;
+    border-radius: 50%;
+    background-color: rgb(228, 14, 64);
+    top : 54%;
+    left:3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#arrow i{
+    font-size: 2.5vw;
+    color: white;
+}

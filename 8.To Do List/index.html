@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div style="font-family: 'Montserrat', sans-serif;" class="w-screen h-screen bg-[#efefec] flex justify-center items-center relative">
+        <div class="mt-[5vh] w-[80vw] min-h-[30vh] sm:w-[50vw] sm:min-h-[300px] bg-[#FFFFFF] flex flex-col items-center rounded-xl absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] shadow-xl/50">
+            <h1 class="text-xl sm:text-2xl lg:text-4xl text-center mt-[2vh] font-semibold"><img src="notes.png" class="size-10 sm:size-12 lg:size-15 inline-block mr-[5px] -mt-px" alt="">TO-DO List</h1>
+            <div id="inputTask"  class="flex justify-between border border-solid border-zinc-600 w-[80%] h-[40px] sm:h-[45px] lg:h-[47px] mt-[15px] rounded-sm">
+                <input type="text" class="text-center text-xs sm:text-sm lg:text-lg outline-none font-medium w-[70%]" id="inp" placeholder="Enter your task here...">
+                <button class="text-xs sm:text-sm lg:text-lg h-[100%] w-[30%] font-medium rounded-sm bg-blue-300 active:translate-y-[0.7px]">Add Task</button>
+            </div>
+            <div id="content" class="w-[80%] h-auto mt-[5vh] flex flex-col gap-y-3 pb-[8vh]">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

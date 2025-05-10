@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div id="main" class="w-screen h-screen bg-[#dededa] flex justify-center items-center">
+        <div id="calcu" class="w-[280px] h-[435px] bg-[#f2f2ef] flex flex-col items-center rounded-3xl scale-[1.05] shadow-xl/30 shadow-[inset_1px_1px_5px_rgba(156,163,175,0.8),inset_-1px_-1px_5px_rgba(156,163,175,0.8)] ">
+            <div id="display" class="w-[86%] h-[70px] bg-black rounded-xl text-center mt-5 text-white text-3xl font-mono"><input type="text" inputmode="none" class="text-right text-4xl w-[95%] h-[100%] outline-none"></div>
+            <div class="grid grid-cols-4 gap-2 gap-y-3 mt-[20px]" >
+                <button id="AC" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-3xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">AC</button>
+                <button id="per" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">%</button>
+                <button id="del" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium"><img src="icons8-backspace-key-48 (3).png" alt=""></button>
+                <button id="divide" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium"><img src="icons8-divide-50.png" id="" class="object-cover" "alt=""></button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">7</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">8</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">9</button>
+                <button id="multiply" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-3xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium"><img src="icons8-multiply-50.png" alt=""></button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">4</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">5</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">6</button>
+                <button id="minus" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-5xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">-</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">1</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">2</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">3</button>
+                <button id="plus" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">+</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">00</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">0</button>
+                <button id="" class="bg-gray-500 text-white rounded-lg w-[53px] h-[50px] inset-shadow-sm inset-shadow-gray-300 active:shadow-sm inset-ring inset-ring-black active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium">.</button>
+                <button id="et" class="text-white rounded-lg w-[53px] h-[50px] active:shadow-sm active:translate-y-[1px] text-4xl font-mono text-shadow-2xs text-shadow-cyan-500/50  flex justify-center items-center font-medium bg-red-400">=</button>
+               
+                
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
