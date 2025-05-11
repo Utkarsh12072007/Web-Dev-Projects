@@ -44,7 +44,7 @@ inp.addEventListener('keydown',(e)=>{
 })
 function addOperator(op) {
   const value = inp.value;
-  const operators = ['+', '-', '×', '÷'];
+  const operators = ['+', '-', '*', '/'];
 
   if (operators.includes(value.slice(-1))) {
     // Replace the last operator
