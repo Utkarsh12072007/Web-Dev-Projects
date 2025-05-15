@@ -11,12 +11,16 @@ document.addEventListener("click", function () {
 });
   
 function toggleCaret() {
+  if(inp.value.length >= 10){
+      inp.classList.remove('text-2xl');
+      inp.classList.add('text-xl')
+  }
   if(inp.value.length >= 7){
       inp.classList.remove('text-4xl');
       inp.classList.add('text-2xl')
   }
   else {
-      inp.classList.remove('text-2xl');
+      inp.classList.remove('text-xl');
       inp.classList.add('text-4xl');
   }
   var nothing;
