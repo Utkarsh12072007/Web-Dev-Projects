@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="all" class="h-screen w-screen">
-        <div id="intro" class="bg-[#F3C77C] m-0 p-0 w-screen h-screen absolute">
+<body class="overflow-hidden">
+    <div id="website" class="h-auto w-screen">
+        <div id="intro" class="bg-[#F3C77C] m-0 p-0 w-screen h-screen absolute z-1000">
             <img src="https://wethinkelastic.com/assets/images/152c223f4359675788470.svg" class="images w-[300px] h-[300px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0" alt="">
             <img src="https://wethinkelastic.com/assets/images/24a07612b16472c6a503f.svg" class="images w-[300px] h-[300px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0" alt="">
             <img src="https://wethinkelastic.com/assets/images/338b04b3ad8edf6773599.svg" class="images w-[300px] h-[300px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0" alt="">
@@ -21,9 +25,22 @@
             <img src="https://wethinkelastic.com/assets/images/109804494fa1878703f2c1.svg" class="images w-[300px] h-[300px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0" alt="">
             <img src="https://wethinkelastic.com/assets/images/11d1acd8abd7b1efc4c23d.svg" class="images w-[300px] h-[300px] object-cover absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0" alt="">
         </div>
-        <div id="main" class ="w-screen h-screen bg-black">
+        <div id="main" class ="w-screen h-[200vh] bg-black">
             <div id="page1" class="w-screen h-screen">
-                <div id="nav" class = "w-screen h-[100px]"></div>
+                <div id="nav" class = "w-screen h-[110px] bg-black fixed top-0 left-0 z-100 transition duration-[1s] ease-in-out opacity-100 translate-y-0 flex justify-between items-center px-[50px]">
+                    <div class="w-20 h-20 bg-[#E7CFB1] mt-[10px] ml-[-20px]">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif, sans-serif" class="text-2xl font-bold text-right mr-[7px] leading-[30px]">we</h1>
+                        <h1 style="font-family: 'Josefin Sans', sans-serif" class="text-2xl font-bold tracking-tighter text-right mr-[7px] leading-[18px]">think</h1>
+                        <h1 style="font-family: 'Josefin Sans', sans-serif" class="text-2xl font-bold tracking-tighter text-right mr-[7px] leading-[30px]">elastic</h1>
+                    </div>
+                    <div id="sc" class="flex justify-between items-center w-[48%]">
+                        <h1 style="font-family: Arial, Helvetica, sans-serif;" class="text-2xl mt-[30px] font-medium text-[#e3c796] hover:text-[#ffa913]">Projects</h1>
+                        <h1 style="font-family: Arial, Helvetica, sans-serif;" class="text-2xl mt-[30px] font-medium text-[#e3c796] hover:text-[#ffa913]">Expertises</h1>
+                        <h1 style="font-family: Arial, Helvetica, sans-serif;" class="text-2xl mt-[30px] font-medium text-[#e3c796] hover:text-[#ffa913]">Lequipe</h1>
+                        <h1 style="font-family: Arial, Helvetica, sans-serif;" class="text-2xl mt-[30px] font-medium text-[#e3c796] hover:text-[#ffa913]">Contact</h1>
+                    </div>
+                </div>
+                <h1 style="font-family: Arial, Helvetica, sans-serif;" class="text-[40vw] text-[#F3C77C] font-extrabold -tracking-wider absolute top-[-15%] flex">hello</h1>
             </div>
         </div>
     </div>
