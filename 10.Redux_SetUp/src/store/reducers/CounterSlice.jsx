@@ -22,5 +22,9 @@ export const CounterSlice = createSlice({
 
 // Action creators are generated for each case reducer function
 export const { increment, decrement, incrementByAmount } = CounterSlice.actions
-
+export const incrementByAmountAsyn = (amount) =>(dispatch)=>{
+  setTimeout(()=>{
+    dispatch(incrementByAmount(amount));
+  },2000)
+}
 export default CounterSlice.reducer
