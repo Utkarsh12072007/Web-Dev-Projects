@@ -25,8 +25,14 @@ function App() {
     );
     Setarr(updateArray);
   };
-  const HandleDelete = (ind) =>{
-    const updateArray = arr.filter((value,index) => index != ind )
+  const HandleDelete = (ID) =>{
+    const updateArray = arr.filter((value) => value.id != ID )
+    Setarr(updateArray);
+  }
+  const toggleFav = (ID)=>{
+    const updateArray = arr.map((value) =>
+      value.id === ID ? { ...value, isFav:!value.isFav } : value
+    );
     Setarr(updateArray);
   }
   return (
@@ -40,7 +46,7 @@ function App() {
           >
             Notes
           </h1>
-          <Cards data={arr} HandleContent={HandleContent} HandleDelete={HandleDelete}></Cards>
+          <Cards data={arr} HandleContent={HandleContent} HandleDelete={HandleDelete} toggleFav ={toggleFav}  ></Cards>
         </div>
       </div>
     </>

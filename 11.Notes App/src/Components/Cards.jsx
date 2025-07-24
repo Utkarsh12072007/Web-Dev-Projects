@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-function Cards({ data,HandleContent,HandleDelete}) {
+function Cards({ data,HandleContent,HandleDelete,toggleFav}) {
   return (
     <div className="w-[100%] mt-16 flex flex-wrap gap-8 mx-10">
       {data.map((value, index) => (
@@ -13,6 +13,7 @@ function Cards({ data,HandleContent,HandleDelete}) {
           index = {index}
           HandleDelete = {HandleDelete}
           ID = {value.id}
+          toggleFav ={toggleFav}
         ></Card>
       ))}
     </div>
